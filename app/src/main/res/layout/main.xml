@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Розрахунок валових викидів"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <!-- Інпут для вугілля -->
+    <EditText
+        android:id="@+id/etCoalConsumption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Витрата вугілля, т"/>
+
+    <!-- Інпут для мазуту -->
+    <EditText
+        android:id="@+id/etFuelOilConsumption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Витрата мазуту, т"/>
+
+    <!-- Інпут для природного газу -->
+    <EditText
+        android:id="@+id/etGasConsumption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Витрата природного газу, м3"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Розрахувати"/>
+
+    <!-- Виведення результатів -->
+    <TextView
+        android:id="@+id/tvCoalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Валовий викид (вугілля):"
+        android:textSize="18sp"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvFuelOilResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Валовий викид (мазут):"
+        android:textSize="18sp"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvGasResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Валовий викид (природний газ):"
+        android:textSize="18sp"
+        android:paddingTop="16dp"/>
+</LinearLayout>
